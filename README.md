@@ -14,7 +14,7 @@ Bu proje aşağıdaki teknolojilerle geliştirilmiştir:
 - 🧾 **SweetAlert2** – Bildirim ve başarı mesajları
 - 🔍 **LINQ** – Veri sorgulama
 - 🧰 **Bootstrap** – Responsive arayüz tasarımı
-- 🧪 **.NET 8** – Framework sürümü (projene göre güncelle)
+- 🧪 **.NET 8** – Framework sürümü
 
 
 ---
