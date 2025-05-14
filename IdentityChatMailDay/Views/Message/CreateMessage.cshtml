@@ -1,0 +1,25 @@
+﻿@model IdentityChatMailDay.Entities.Message
+@{
+    ViewData["Title"] = "CreateMessage";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+
+
+<br />
+<br />
+<form method="post">
+
+   
+    <input type="text" asp-for="ReceiverEmail" placeholder=" Kime" class="form-control" />
+    <br />
+     
+    <input type="text" asp-for="Subject" class="form-control" placeholder=" Konu" />
+    <br />
+    
+    <textarea asp-for="MessageDetail" class="textarea_editor form-control bg-light" rows="15" placeholder="Mesaj Yaz ..."></textarea>
+    <br />
+    <button class="btn btn-primary">Mesajı Gönder</button>
+</form>
+
+

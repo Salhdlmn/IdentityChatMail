@@ -1,0 +1,150 @@
+﻿
+
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="/quixlab-master/images/favicon.png">
+	<!-- Custom Stylesheet -->
+	<link href="/quixlab-master/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--*******************
+		Preloader start
+	********************-->
+	<div id="preloader">
+		<div class="loader">
+			<svg class="circular" viewBox="25 25 50 50">
+				<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+			</svg>
+		</div>
+	</div>
+	<!--*******************
+		Preloader end
+	********************-->
+	<!--**********************************
+		Main wrapper start
+	***********************************-->
+	
+
+		<!--**********************************
+			Nav header start
+		***********************************-->
+		<!--**********************************
+			Nav header end
+		***********************************-->
+		<!--**********************************
+			Header start
+		***********************************-->
+	<div class="header">
+		<div class="header-content clearfix">
+
+			<div class="header-left">
+				<div class="input-group icons">
+					<div class="input-group-prepend">
+						<span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+					</div>					
+					
+						<form asp-action="Inbox" method="get" class="mb-3">
+							<input type="text" name="search" class="form-control" placeholder="Mesajlarda ara..." value="@ViewContext.HttpContext.Request.Query["search"]" />
+						</form>
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		<!--**********************************
+			Header end ti-comment-alt
+		***********************************-->
+		<!--**********************************
+			Sidebar start
+		***********************************-->
+		<!--**********************************
+			Sidebar end
+		***********************************-->
+		<!--**********************************
+			Content body start
+		***********************************-->
+		
+
+
+			<!-- row -->
+
+			<div class="container-fluid">
+				
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="email-left-box">
+									<a href="/Message/CreateMessage/" class="btn btn-primary btn-block">Mesaj Oluştur</a>
+									<div class="mail-list mt-4">
+										<a href="/Profile/UserDetail/" class="list-group-item border-0  p-r-0"><i class="fa fa-inbox font-18 align-middle mr-2"></i> Profilim</a> 
+										<a href="/Message/Inbox/" class="list-group-item border-0 p-r-0"><i class="fa fa-inbox font-18 align-middle mr-2"></i> Gelen Kutusu</a>
+										<a href="/Message/Sendbox" class="list-group-item border-0 p-r-0"><i class="fa fa-paper-plane font-18 align-middle mr-2"></i>Gönderilen Kutusu</a>  
+									
+									</div>
+									
+								</div>
+								<div class="email-right-box">
+									<div role="toolbar" class="toolbar">
+										
+									</div>
+									<div class="email-list m-t-15">
+										<div class="container">
+										@RenderBody()
+
+										</div>
+
+										
+									</div>
+									<!-- panel -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+				
+			</div>
+			<!-- #/ container -->
+	
+		<!--**********************************
+			Content body end
+		***********************************-->
+		<!--**********************************
+			Footer start
+		***********************************-->
+		
+		<!--**********************************
+			Footer end
+		***********************************-->
+
+	<!--**********************************
+		Main wrapper end
+	***********************************-->
+	<!--**********************************
+		Scripts
+	***********************************-->
+	<script src="/quixlab-master/plugins/common/common.min.js"></script>
+	<script src="/quixlab-master/js/custom.min.js"></script>
+	<script src="/quixlab-master/js/settings.js"></script>
+	<script src="/quixlab-master/js/gleek.js"></script>
+	<script src="/quixlab-master/js/styleSwitcher.js"></script>
+	@RenderSection("Scripts", required: false)
+
+
+</body>
+
+</html>

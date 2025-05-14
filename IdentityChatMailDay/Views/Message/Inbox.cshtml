@@ -1,0 +1,39 @@
+﻿@model List<IdentityChatMailDay.Entities.Message>
+@{
+	ViewData["Title"] = "Inbox";
+	Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+@functions {
+	public string WordLimit(string text, int wordCount)
+	{
+		if (string.IsNullOrWhiteSpace(text)) return "";
+
+		var words = text.Split(' ');
+		if (words.Length <= wordCount)
+			return text;
+
+		return string.Join(" ", words.Take(wordCount)) + "...";
+	}
+}
+
+@foreach (var item in Model)
+{
+	<div class="message">
+		<div class="col-mail col-mail-1">
+			<div class="email-checkbox">
+				<input type="checkbox" id="chk2">
+				<label class="toggle" for="chk2"></label>
+			</div><span class="star-toggle ti-star"></span>
+		</div>
+		<div class="col-mail col-mail-2">
+			<a href="/Message/MessageDetail/@item.MessageId">
+				<div class="subject"><b>@item.Subject </b> -@WordLimit(item.MessageDetail, 320)</div>
+				<div class="date"> @item.SendDate.ToString("dd.MM.yyyy")</div>
+			</a>
+		</div>
+
+	</div>
+
+}
+@* @(item.MessageDetail.Length > 320 ? item.MessageDetail.Substring(0, 320) + "..." : item.MessageDetail) *@

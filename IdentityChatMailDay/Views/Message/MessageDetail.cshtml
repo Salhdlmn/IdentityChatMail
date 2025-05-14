@@ -1,0 +1,26 @@
+﻿@model IdentityChatMailDay.Entities.Message
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<div class="read-content">
+    
+
+    
+    <hr>
+    <div class="media mb-4 mt-1">
+        <div class="media-body">
+            <span class="float-right">@Model.SendDate</span>
+            <h4 class="m-0 text-primary">@Model.Subject</h4><small class="text-muted">@Model.SenderEmail</small>
+        </div>
+
+    </div>
+      
+    <p>
+       @Model.MessageDetail
+    </p>
+    
+
+</div>
+

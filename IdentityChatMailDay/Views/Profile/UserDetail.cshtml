@@ -1,0 +1,25 @@
+﻿@model List<IdentityChatMailDay.Entities.AppUser>
+@{
+    ViewData["Title"] = "UserDetail";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4 col-xl-3">
+          
+                <div class="card-body">
+                    <div class="media align-items-center mb-4">
+                        <img class="mr-3" src="/quixlab-master/images/avatar/11.png" width="80" height="80" alt="">
+                        <div class="media-body">
+                            <h3 class="mb-0">@ViewBag.v1 @ViewBag.v2</h3>
+                            <p class="text-muted mb-0">@ViewBag.v3</p>
+                        </div>
+                    </div>
+
+                </div>
+            
+        </div>
+
+    </div>
+</div>
