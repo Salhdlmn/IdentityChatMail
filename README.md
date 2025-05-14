@@ -2,15 +2,20 @@
 
 ASP.NET Core MVC ile geliştirilen basit ama güçlü bir mesajlaşma uygulaması.
 
-## 🚀 Özellikler
+## 🧰 Kullanılan Teknolojiler
 
-- ✅ ASP.NET Core Identity ile kullanıcı yönetimi
-- 📥 Gelen kutusu (Inbox)
-- 📤 Mesaj oluşturma ve detay sayfası
-- 🔍 Arama fonksiyonu
-- ✅ SweetAlert ile başarılı gönderim bildirimi
-- ✂️ Mesaj özeti görüntüleme
-- 🧱 Razor ile şık layout yapısı
+Bu proje aşağıdaki teknolojilerle geliştirilmiştir:
+
+- 🟦 **ASP.NET Core MVC** – Proje çatısı ve HTTP işleyicisi
+- 🔐 **ASP.NET Identity** – Kullanıcı kimlik doğrulama ve yetkilendirme
+- 🗂️ **Entity Framework Core** – ORM ve veritabanı işlemleri
+- 🧠 **SQL Server** – Veritabanı yönetimi
+- 🎨 **Razor Pages** – Dinamik HTML oluşturma
+- 🧾 **SweetAlert2** – Bildirim ve başarı mesajları
+- 🔍 **LINQ** – Veri sorgulama
+- 🧰 **Bootstrap** – Responsive arayüz tasarımı
+- 🧪 **.NET 8** – Framework sürümü (projene göre güncelle)
+
 
 ---
 
